@@ -5,4 +5,4 @@ WORKDIR /app
 COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["hypercorn", "main:app", "-b 0.0.0.0:6000"]
+CMD ["/usr/local/bin/python3", "main.py"]

@@ -12,3 +12,6 @@ async def index():
 @app.errorhandler(404)
 async def page_not_found(e):
     return redirect("/")
+
+
+app.run("0.0.0.0", 8000)
